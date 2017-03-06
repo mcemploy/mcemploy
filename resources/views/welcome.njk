@@ -1,0 +1,17 @@
+{% extends 'master' %}
+
+{% block content %}
+  <div class="__banner">
+    <div class="banner__inner">
+      <img src="/assets/logo-white.png" class="rotating">
+      <h1>MCEMPLOY</h1>
+      <h2>Coming Soon</h2>
+      <p>Interested in beta? Join our mailing list to be notified</p>
+      <form action="/mailing-list" method="POST" class="mail_form">
+        <input type="email" id="email" name="email"  placeholder="Email">
+        <button type="submit">Submit</button>
+        {{ csrfField }}
+      </form>
+    </div>
+  </div>
+{% endblock %}

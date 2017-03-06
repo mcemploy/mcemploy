@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+  background-color: #333;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.__banner {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.__banner .banner__inner h1 {
+  font-weight: 500;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.__banner .banner__inner h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.__banner .banner__inner p,
+.__banner .banner__inner a {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.__banner .banner__inner h2 span {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.mail_form input {
+  height: 38px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  outline: none;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 200px;
+}
+
+.mail_form button {
+  height: 38px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.sweet-alert button.confirm {
+  color: #333 !important;
+}
+
+@keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: rotating 30s linear infinite;
+}
